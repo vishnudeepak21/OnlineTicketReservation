@@ -1,0 +1,25 @@
+use ticketBookingdb;
+
+CREATE TABLE GameEventTbl (
+    GameEventId varchar(255) NOT NULL PRIMARY KEY,
+    GameEventName varchar(255),
+    ShowDate varchar(255),
+    ShowStatus varchar(255),
+    BookingStatus varchar(255),
+    NumberOfSeats varchar(255)
+);
+
+
+CREATE TABLE EventBlockTbl (
+    GameEventId varchar(255) NOT NULL PRIMARY KEY,
+    UserNumber varchar(255),
+    UserName varchar(255),
+    SoftBlockingDate varchar(255),
+    ConfirmationDate varchar(255),
+    SeatCancelledDate varchar(255),
+    TotalSeatBooked varchar(255),
+    CanecelledSeatCount varchar(255)
+);
+
+select * from gameEventTbl;
+select * from EventBlockTbl;
